@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Turkey Run — The Great Escape</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #2b1d12; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: system-ui, sans-serif; }
+  #wrap { width: 960px; max-width: 100vw; }
+  canvas { display: block; width: 100%; height: auto; background: #ffd9a0; border-radius: 6px; }
+  #help { color: #d8c9a8; font-size: 13px; text-align: center; padding: 8px 12px 0; line-height: 1.5; }
+  #help b { color: #ffd94a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="540"></canvas>
+  <div id="help">
+    <b>SPACE / ↑ / CLICK</b> jump (double jump in mid-air) &nbsp;·&nbsp;
+    <b>↓</b> slide &nbsp;·&nbsp; <b>→</b> sprint &nbsp;·&nbsp; <b>←</b> slow down &nbsp;·&nbsp;
+    <b>P</b> pause &nbsp;·&nbsp; <b>M</b> sound &nbsp;·&nbsp; <b>R</b> restart<br>
+    Outrun the farmer for 1500m to reach the woods. Corn is +25, pie is +100, a golden feather is +1 life.
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
